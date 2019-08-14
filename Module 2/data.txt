@@ -1,0 +1,3 @@
+Name	Age	GPA
+Shaun	16	4.4
+Dillon	22	4.6
