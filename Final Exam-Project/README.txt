@@ -1,0 +1,11 @@
+My final project will be about Companies.
+
+My base class for my project will be "Company.h". The Company class will have 4 instance variables; a string Name, and 3 floating point variables of revenue, expenses, and profit. The Company class will have a blank constuctor, and a 3 argument one. NOTE: The profit variable will not be a part of the constructor, as it is calculated based off of revenue and expenses. Appropriate Getters/Setter functions will be in place for all variables. Company will also have a void print() function that prints out it's variables in a good format.
+
+"TechCompany.h" and "FoodCompany.h" will be the two derived classes of "Company.h". Both will inherit all the accessor functions of the Company class, as well as each having 3 instance variables of their own.  FoodCompany has integer hourlyWage(since food companies usually pay hourly); boolean fdaApproved; and string farm(where their produce is purchased from). TechCompany has integer yearlyWage(since tech companies usually give money in yearly salary), integer numComputers, and boolean internships offered( Tech Companies are one of the few sectors that allow for internships as well as jobs). Both of these classes have appropriate Getters/Setters, as well as a void print() that calls the superclass print(), and then prints their own variables.
+
+"Car.h" is a class that is unrelated to all of the previously mentioned classes. The Car class has string licenseNum, int distance away, and boolean arrived(for status on where the Car is).
+
+"KitchenDelivery.h" is a class that inherits from both FoodCompany and TechCompany. This company will make the food and deliver it to your house. For the deliver mechanishm, KitchenDelivery uses an Object of the Car class. In addition to that, it has string website, and int driverPhone for reference. Appropriate Getters/Setters will be set up, as well as a void print() that calls both superclass's print(), and then prints its own variables.
+
+The main class, "DeliveryDemo.cpp", will set up a vector of FoodDelivery Companies. At the start of execution, the promp will print out all types of companies, and ask which to select. After one is selected, the program will prompt the user to enter what field to see about the class. This will keep going until the user quits the program.
